@@ -2,8 +2,7 @@ const express = require("express");         //incorperating Express in our packa
 
 const app = express();
 
-// Now we have to use body-parser through app
-app.use(express.urlencoded({extended: true}));   //body-parser have different other methods we're using urlendcoded as it is used for parsing data comes from a html form.
+app.use(express.urlencoded({extended: true}));   
 app.use(express.json());
 
 app.get("/", function(req, res){
